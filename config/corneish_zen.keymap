@@ -38,16 +38,6 @@
             key-positions = <21 20>;
         };
 
-        Escape {
-            bindings = <&kp ESC>;
-            key-positions = <0 1>;
-        };
-
-        mod3 {
-            bindings = <&mo 0>;
-            key-positions = <38 39>;
-        };
-
         Delete {
             bindings = <&kp DELETE>;
             key-positions = <24 11>;
@@ -60,7 +50,7 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB         &kp Q  &kp W        &kp E         &kp R                       &kp T          &kp Y        &kp U                         &kp I      &kp O    &kp P     &kp BSPC
+&mt ESC TAB     &kp Q  &kp W        &kp E         &kp R                       &kp T          &kp Y        &kp U                         &kp I      &kp O    &kp P     &kp BSPC
 &kp CAPSLOCK    &kp A  &kp S        &kp D         &mt LG(F) F                 &kp G          &kp H        &kp J                         &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z  &mt K_CUT X  &mt K_COPY C  &mt K_PASTE V               &kp B          &kp N        &kp M                         &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
                                     &kp LEFT_ALT  &mt LEFT_COMMAND LG(SPACE)  &lt 1 SPACE    &lt 1 SPACE  &mt RIGHT_COMMAND LANGUAGE_1  &mo 2
@@ -81,7 +71,7 @@
             bindings = <
 &trans  &kp K_LOCK  &mt C_RW C_PREV       &mt C_PP C_PP         &mt C_FAST_FORWARD C_NEXT  &bt BT_SEL 0    &kp ASTERISK  &kp N7        &kp N8        &kp N9        &kp PLUS    &trans
 &trans  &none       &kp K_MUTE            &kp C_VOL_DN          &kp C_VOLUME_UP            &bt BT_SEL 1    &kp SLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS   &kp DOLLAR
-&trans  &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_AL_CONTROL_PANEL     &bt BT_SEL 3    &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &none
+&trans  &none       &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_AL_CONTROL_PANEL     &bt BT_SEL 3    &kp EQUAL     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp COMMA
                                           &trans                &trans                     &trans          &trans        &trans        &kp N0
             >;
         };
